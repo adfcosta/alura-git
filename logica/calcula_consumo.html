@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+
+<h3>Álcool ou Gasolina?</h3>
+
+<script type="text/javascript">
+
+	var tanque = 40;
+	var caminhoComAlcool = 300;
+	var caminhocomGasolina = 400;
+	var consumoDeAlcool = caminhoComAlcool/ tanque;
+	var consumoDeGasolina = caminhocomGasolina / tanque; 
+
+	function pularLinha (){
+			document.write("<br>");
+	}
+	function inserir(texto){
+		document.write(texto);
+		pularLinha();
+	}
+
+
+	inserir("O consumo médio com gasolina é de " + consumoDeGasolina + "km/l");
+	inserir("O consumo médio com alcool é de " + consumoDeAlcool + "km/l");
+
+</script>

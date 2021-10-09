@@ -1,0 +1,26 @@
+<meta charset="utf-8">
+
+<input/>
+
+<button>enviar</button>
+
+<script type="text/javascript">
+    
+    var segredo = Math.round(Math.random() * 10);
+    var input = document.querySelector("input");
+    var button = document.querySelector("button");
+    button.onclick = verifica
+    input.focus();
+
+    function verifica (){
+        if (parseFloat(input.value) == segredo) {
+            alert("Você acertou!")
+        } else {
+            alert("você errou")
+        }
+        input.value = ""
+        input.focus();
+    }
+
+
+</script>
